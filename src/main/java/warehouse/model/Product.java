@@ -1,5 +1,6 @@
 package warehouse.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,7 @@ public class Product {
     private String title;
     private Double weight;
     private Double price;
+    @Column(unique = true)
     private String sku;
     private Integer quantity;
     private boolean isDeleted;
