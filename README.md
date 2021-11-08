@@ -51,7 +51,7 @@ The REST API to the Coordinator app is described below.
 `http://localhost:8080/products`
 
 #### Sample request body
-```json
+```javascript
 {
   "title": "Product name",
   "weight": 119.1,
@@ -168,7 +168,7 @@ Empty response
 `http://localhost:8080/products/ID`
 
 #### Sample request body
-```json
+```javascript
 {
   "skuAndQuantity": {
     "SKU_NUMBER": 5, // amount of products by SKU_NUMBER
@@ -178,7 +178,7 @@ Empty response
 ```
 
 #### Sample response
-```json
+```javascript
 {
   "skuAndPrice": {
     "SKU_NUMBER": 170.0, // amount to be paid by SKU_NUMBER
